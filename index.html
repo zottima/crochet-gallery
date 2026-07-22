@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finished Makes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <p class="eyebrow">Handmade, one stitch at a time</p>
+  <h1>zotti's crochet stuff</h1>
+</header>
+
+<main>
+  <section class="stage" aria-label="Image viewer">
+    <button class="nav-arrow nav-arrow--prev" id="prevButton" aria-label="Previous piece">&#8592;</button>
+
+    <figure class="stage-figure">
+      <img id="mainImage" src="" alt="" />
+      <figcaption id="mainCaption"></figcaption>
+    </figure>
+
+    <button class="nav-arrow nav-arrow--next" id="nextButton" aria-label="Next piece">&#8594;</button>
+  </section>
+
+  <p class="counter" id="counter"></p>
+
+  <nav class="thumb-strip" id="thumbStrip" aria-label="All pieces"></nav>
+
+  <p class="empty-state" id="emptyState" hidden>
+    No pieces yet. Drop some images into the <code>images</code> folder and rebuild the manifest.
+  </p>
+</main>
+
+<footer class="site-footer">Last updated: <span id="lastUpdated"></span></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
