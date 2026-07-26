@@ -40,6 +40,23 @@ body {
   font-size: clamp(1.8rem, 4vw, 2.6rem);
 }
 
+.shop-note {
+  margin: 0.9rem auto 0;
+  max-width: 32rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.shop-note a {
+  color: var(--thread-mustard);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.shop-note a:hover {
+  color: var(--thread-teal);
+}
+
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -150,6 +167,10 @@ main {
   color: var(--text-muted);
   font-size: 0.8rem;
   padding: 0 1rem 2rem;
+}
+
+.site-footer p {
+  margin: 0.2rem 0;
 }
 
 @media (max-width: 560px) {
